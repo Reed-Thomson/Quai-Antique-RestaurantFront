@@ -3,23 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Ton CSS -->
+    <link rel="stylesheet" href="scss/main.css"/>  
+
     <title>Document</title>
 </head>
-<body> 
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">Quai Antique</a>
+
+            <!-- Burger button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu -->
+            <div class="collapse navbar-collapse justify-content-center justify-content-lg-start" id="navbarSupportedContent">
+
+
+                <ul class="navbar-nav mb-2 mb-lg-0 ms-lg-auto">
 
 
 
-  
-<header>Le menu du site Quai Antique</menu></header>
+    <li class="nav-item">
+        <a class="nav-link" href="/">Accueil</a>
+    </li>
 
-    <main id="main-page">
-    <!-- Le contenu de la page sera injecter ici-->
-    </main>
+    <li class="nav-item">
+        <a class="nav-link" href="/galerie">Galerie</a>
+    </li>
 
-    <footer>Le footer de mon site</footer>
-    
-     <script type="module" src="./Router/router.js"></script>
+    <li class="nav-item">
+        <a class="nav-link" href="/carte">La carte</a>
+    </li>
 
+    <li class="nav-item">
+        <a class="nav-link" href="/reservation">Réservation</a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link" href="/compte">Mon compte</a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link" href="/login">Connexion/Deconnexion</a>
+        <!-- ou Déconnexion plus tard -->
+    </li>
+
+</ul>
+
+                   
+
+                    
+
+                    <!-- Dropdown -->
+                    
+
+                    
+
+                </ul>
+
+                <!-- Search bar -->
+                
+            </div>
+
+        </div>
+    </nav>
+</header>
+
+<main id="main-page">
+    <!-- Contenu injecté ici -->
+</main>
+
+<footer>Le footer de mon site</footer>
+
+<!-- Ton Routeur -->
+<script type="module" src="./Router/router.js"></script>
+
+<!-- Bootstrap JS (indispensable pour nav + dropdown) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
