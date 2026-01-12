@@ -1,2 +1,59 @@
 @import url("/node_modules/bootstrap-icons/font/bootstrap-icons.css");
 @import '_custom';
+
+/* Layout général */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* IMPORTANT : c'est bien ton <main id="main-page"> */
+main#main-page {
+    flex: 1 0 auto;
+}
+
+/* Footer en bas */
+footer {
+    margin-top: auto;
+    flex-shrink: 0;
+}
+
+/* Hero Scene avec fond image */
+.hero-scene {
+    position: relative;
+    
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(/assets/images/victoria-shes-unsplash.jpg);
+        background-size: cover;
+        filter: brightness(0.3);
+    }
+
+    * {
+        // Positionner les éléments devant le ::before
+        position: relative;
+    }
+
+    .hero-scene-content {
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+p{
+    font-family: $font-family-serif;
+    font-size: 18px;
+}
