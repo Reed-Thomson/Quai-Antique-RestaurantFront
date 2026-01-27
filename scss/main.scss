@@ -27,6 +27,7 @@ footer {
 /* Hero Scene avec fond image */
 .hero-scene {
     position: relative;
+    margin-bottom: 15px;
     
     &::before {
         content: "";
@@ -37,7 +38,7 @@ footer {
         height: 100%;
         background-image: url(/assets/images/victoria-shes-unsplash.jpg);
         background-size: cover;
-        filter: brightness(0.3);
+        filter: brightness(0.1);
     }
 
     * {
@@ -51,9 +52,91 @@ footer {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+
+        h1 {
+            font-size: 4rem;
+            font-weight: bold;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
     }
 }
 p{
     font-family: $font-family-serif;
     font-size: 18px;
 }
+
+/* Galerie images */
+.image-card {
+    width: 100%;
+    aspect-ratio: 1 !important;
+    overflow: hidden;
+    border-radius: 0.375rem;
+    position: relative;
+}
+
+.image-card .galerie-img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center !important;
+    display: block !important;
+    transition: opacity 0.3s ease;
+}
+
+.titre-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+}
+
+.image-card:hover .titre-image {
+    opacity: 1;
+}
+
+.galerie-img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center !important;
+    display: block !important;
+}
+
+
+@media (min-width: 992px) {
+    .row-cols-lg-3 > .col {
+        width: calc(33.333% - 6px) !important;
+    }
+
+
+} 
+ 
+.form-label {
+  color: $color-secondary; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
