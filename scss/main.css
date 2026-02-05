@@ -11949,8 +11949,42 @@ p {
   margin: 0;
   padding: 20px;
   box-sizing: border-box;
+  z-index: 1;
+  pointer-events: none;
 }
 
 .image-card:hover .titre-image {
   opacity: 1;
+}
+
+.allreservations a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #906427;
+  padding: 15px;
+  margin: 10px 0;
+  text-decoration: underline;
+}
+
+.allreservations a span {
+  margin: 0 10px;
+  white-space: nowrap;
+}
+
+.image-card:hover .action-image-buttons {
+  opacity: 1;
+}
+
+.action-image-buttons {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  opacity: 0;
+  transition: all 0.3s ease;
+  z-index: 2;
 }

@@ -37,6 +37,7 @@
         placeholder="test@mail.fr"
         name="Email"
       >
+      <div class="text-danger" id="EmailError" style="display: none;">L'email n'est pas au bon format</div>
     </div>
 
     <div class="mb-4">
@@ -47,6 +48,7 @@
         id="PasswordInput"
         name="Password"
       >
+      <div class="text-danger" id="PasswordError" style="display: none;">Le mot de passe n'est pas assez robuste. Il faut au moins 8 caractères, une majuscule, une minuscule, un chiffre et un caractère spécial</div>
     </div>
 
     <div class="mb-4">
@@ -59,6 +61,7 @@
         id="ValidatePasswordInput"
         name="PasswordConfirm"
       >
+      <div class="text-danger" id="ValidatePasswordError" style="display: none;">Le mot de passe n'est pas assez robuste. Il faut au moins 8 caractères, une majuscule, une minuscule, un chiffre et un caractère spécial</div>
     </div>
 
     <div class="text-center mb-4">

@@ -1,51 +1,185 @@
 <div class="hero-scene text-center text-white">
-    <div class="hero-scene-content">
-        <h1>Galerie</h1>
-    </div>
+  <div class="hero-scene-content">
+    <h1>Galerie</h1>
+  </div>
 </div>
 
 <article>
-    <div class="container p-4">
-        <div class="row row-cols-2 row-cols-lg-3 g-3 align-items-start">
-            <div class="col">
-                <div class="image-card text-white">
-                    <img src="/assets/images/driink.food.jpg" class="rounded w-100 galerie-img" alt="Plat 1"/>
-                    <p class="titre-image">Plat 1</p>
-                </div>
-            </div>
-            <div class="col">
-                <div class="image-card text-white">
-                    <img src="/assets/images/FFOOD.jpg" class="rounded w-100 galerie-img" alt="Plat 2"/>
-                    <p class="titre-image">Plat 2</p>
-                </div>
-            </div>
-            <div class="col">
-                <div class="image-card text-white">
-                    <img src="/assets/images/food.gglr.jpg" class="rounded w-100 galerie-img" alt="Plat 3"/>
-                    <p class="titre-image">Plat 3</p>
-                </div>
-            </div>
-            <div class="col">
-                <div class="image-card text-white">
-                    <img src="/assets/images/food.glrr.jpg" class="rounded w-100 galerie-img" alt="Plat 4"/>
-                    <p class="titre-image">Plat 4</p>
-                </div>
-            </div>
-            <div class="col">
-                <div class="image-card text-white">
-                    <img src="/assets/images/food.jpg" class="rounded w-100 galerie-img" alt="Plat 5"/>
-                    <p class="titre-image">Plat 5</p>
-                </div>
-            </div>
-            <div class="col">
-                <div class="image-card text-white">
-                    <img src="/assets/images/food.glr.jpg" class="rounded w-100 galerie-img" alt="Plat 6"/>
-                    <p class="titre-image">Plat 6</p>
-                </div>
-            </div>
-        </div>
-        <div class="text-center pt-4">
-            <a href="/reservation" class="btn btn-primary">Réserver</a>
-        </div>
+  <div class="container p-4">
+    <div class="d-flex justify-content-center mb-3">
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#AddPhotoModal">
+        Ajouter une photo
+      </button>
     </div>
+    <div class="row row-cols-2 row-cols-lg-3 g-3 align-items-start">
+
+      <div class="col">
+        <div class="image-card text-white">
+          <img src="/assets/images/driink.food.jpg" class="rounded w-100 galerie-img" alt="Plat 1">
+          <p class="titre-image">Plat 1</p>
+          <div class="action-image-buttons">
+            <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal">
+              <i class="bi bi-pencil-square"></i>
+            </button>
+            <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#DeletePhotoModal">
+              <i class="bi bi-trash"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="image-card text-white">
+          <img src="/assets/images/FFOOD.jpg" class="rounded w-100 galerie-img" alt="Plat 2">
+          <p class="titre-image">Plat 2</p>
+          <div class="action-image-buttons">
+            <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal">
+              <i class="bi bi-pencil-square"></i>
+            </button>
+            <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#DeletePhotoModal">
+              <i class="bi bi-trash"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="image-card text-white">
+          <img src="/assets/images/food.gglr.jpg" class="rounded w-100 galerie-img" alt="Plat 3">
+          <p class="titre-image">Plat 3</p>
+          <div class="action-image-buttons">
+            <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal">
+              <i class="bi bi-pencil-square"></i>
+            </button>
+            <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#DeletePhotoModal">
+              <i class="bi bi-trash"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="image-card text-white">
+          <img src="/assets/images/food.glrr.jpg" class="rounded w-100 galerie-img" alt="Plat 4">
+          <p class="titre-image">Plat 4</p>
+          <div class="action-image-buttons">
+            <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal">
+              <i class="bi bi-pencil-square"></i>
+            </button>
+            <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#DeletePhotoModal">
+              <i class="bi bi-trash"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="image-card text-white">
+          <img src="/assets/images/food.jpg" class="rounded w-100 galerie-img" alt="Plat 5">
+          <p class="titre-image">Plat 5</p>
+          <div class="action-image-buttons">
+            <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal">
+              <i class="bi bi-pencil-square"></i>
+            </button>
+            <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#DeletePhotoModal">
+              <i class="bi bi-trash"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="image-card text-white">
+          <img src="/assets/images/food.glr.jpg" class="rounded w-100 galerie-img" alt="Plat 6">
+          <p class="titre-image">Plat 6</p>
+          <div class="action-image-buttons">
+            <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal">
+              <i class="bi bi-pencil-square"></i>
+            </button>
+            <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#DeletePhotoModal">
+              <i class="bi bi-trash"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="text-center pt-4">
+      <a href="/reservation" class="btn btn-primary">Réserver</a>
+    </div>
+  </div>
 </article>
+
+<!-- Modale: Ajouter une photo -->
+<div class="modal fade" tabindex="-1" id="AddPhotoModal" aria-labelledby="AddPhotoModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="AddPhotoModalLabel">Ajouter une photo</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+      </div>
+      <div class="modal-body">
+        <div class="mb-3">
+          <label for="photoTitle" class="form-label">Titre</label>
+          <input type="text" class="form-control" id="photoTitle" placeholder="Titre de la photo">
+        </div>
+        <div class="mb-3">
+          <label for="photoFile" class="form-label">Image</label>
+          <input type="file" class="form-control" id="photoFile" accept="image/*">
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+        <button type="button" class="btn btn-primary">Ajouter</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal edition -->
+<div class="modal fade" id="EditionPhotoModal" tabindex="-1" aria-labelledby="EditionPhotoModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title fs-5" id="EditionPhotoModalLabel">Edition Photo</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="NamePhotoInput" class="form-label">Titre</label>
+            <input type="text" class="form-control" id="NamePhotoInput" placeholder="Lasagnes à la bolognese" name="Titre">
+          </div>
+          <div class="mb-3">
+            <label for="ImageInput" class="form-label">Image</label>
+            <input type="file" class="form-control" id="ImageInput" name="Image">
+          </div>
+          <div class="text-center">
+            <button type="button" class="btn btn-primary">Enregistrer</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modale: Supprimer une photo -->
+<div class="modal fade" tabindex="-1" id="DeletePhotoModal" aria-labelledby="DeletePhotoModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="DeletePhotoModalLabel">Supprimer la photo</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+      </div>
+      <div class="modal-body">
+        <img id="deletePhotoPreview" class="img-fluid rounded mb-3" alt="Aperçu de la photo à supprimer">
+        <p>Voulez-vous vraiment supprimer cette photo ?</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+        <button type="button" class="btn btn-danger">Supprimer</button>
+      </div>
+    </div>
+  </div>
+</div>
